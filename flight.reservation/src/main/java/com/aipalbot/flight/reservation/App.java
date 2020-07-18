@@ -13,7 +13,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+      
         
         //String name, String id, School school, Address address
         String name = "Sam";
@@ -25,7 +25,7 @@ public class App
         
         Person student= new Student(name,id,school,address);
         
-        
+        System.out.println("Name: " + student.getName() );
         
     }
 }
