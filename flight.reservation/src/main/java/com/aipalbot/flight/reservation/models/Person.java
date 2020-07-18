@@ -12,5 +12,4 @@ private Address address; //composition
 		this.address=address;
 	}
 
-
 }

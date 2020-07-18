@@ -6,8 +6,8 @@ import lombok.Getter;
 @Getter
 public class School {
 
-	public String name;
-	public Address address;
+	private String name;
+	private Address address;
 	
 	public School(String name, Address address) {
 		this.name = name;

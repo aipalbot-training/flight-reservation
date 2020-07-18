@@ -22,8 +22,10 @@ public class App
         address.setCity("Philly");
         
         School school = new School(name, address);
+
         
         Person student= new Student(name,id,school,address);
+        
         
         System.out.println("Name: " + student.getName() );
         
