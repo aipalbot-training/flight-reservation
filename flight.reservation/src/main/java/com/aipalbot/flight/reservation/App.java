@@ -24,6 +24,7 @@ public class App
         School school = new School(name, address);
 
         
+        
         Person student= new Student(name,id,school,address);
         
         
