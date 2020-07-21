@@ -1,5 +1,14 @@
 package com.aipalbot.flight.reservation.models;
 
-public class DeltaAirline extends Flight {
+import lombok.Getter;
 
+@Getter
+public class DeltaAirline extends Flight {
+	
+	private double discount;
+	
+	public DeltaAirline(double d) {
+		discount=d;
+	}
+	
 }

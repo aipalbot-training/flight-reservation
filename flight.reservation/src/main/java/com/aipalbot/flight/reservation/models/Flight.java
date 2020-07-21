@@ -1,12 +1,33 @@
 package com.aipalbot.flight.reservation.models;
 
+import java.util.List;
+
+import com.aipalbot.flight.reservation.utils.AirportCode;
 import com.aipalbot.flight.reservation.utils.Color;
+import com.aipalbot.flight.reservation.utils.Deal;
+import com.aipalbot.flight.reservation.utils.FlightSize;
+import com.aipalbot.flight.reservation.utils.Terminal;
 
-public class Flight {
+import lombok.Getter;
+import lombok.Setter;
 
-	public Color color;
-	public String lift;
-	public String thrust;
-	public String drag;
-	public int weight;
+@Getter
+@Setter
+public abstract class Flight {
+
+	private Color color;
+	private String lift;
+	private String thrust;
+	private String drag;
+	private String flightNo;
+	private int weight;
+	private List<Seat> seats;
+	private List<Person> attendants;
+	private Terminal terminal;
+	private AirportCode arrival; //arrival
+	private AirportCode departure; //departure
+	private Deal deal;
+	private FlightSize size;
+	
+	
 }

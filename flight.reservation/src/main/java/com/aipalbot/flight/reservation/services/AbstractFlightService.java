@@ -24,11 +24,6 @@ public abstract class AbstractFlightService implements IPaymentService{
 		return null;
 	}
 
-	@Override
-	public String reserveSeat(Person person) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	@Override
 	public Receipt prepareReservation(Person person, Card card) {
