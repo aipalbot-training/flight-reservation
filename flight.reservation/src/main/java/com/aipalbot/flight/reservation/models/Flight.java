@@ -1,6 +1,7 @@
 package com.aipalbot.flight.reservation.models;
 
 import java.util.List;
+import java.util.Map;
 
 import com.aipalbot.flight.reservation.utils.AirportCode;
 import com.aipalbot.flight.reservation.utils.Color;
@@ -21,7 +22,7 @@ public abstract class Flight {
 	private String drag;
 	private String flightNo;
 	private int weight;
-	private List<Seat> seats;
+	private Map<String,Seat> seats;
 	private List<Person> attendants;
 	private Terminal terminal;
 	private AirportCode arrival; //arrival

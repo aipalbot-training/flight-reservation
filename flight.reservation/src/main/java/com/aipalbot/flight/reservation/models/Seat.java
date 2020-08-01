@@ -8,6 +8,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Seat {
-private int seatNo;
+private String seatNo;
+private String arrangeNo;
 private Location location;
+private Passenger passenger;
 }
