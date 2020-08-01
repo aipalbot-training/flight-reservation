@@ -10,8 +10,5 @@ private int promotionCode;
 	public UnitedAirline(int promoCode) {
 		this.promotionCode = promoCode;
 		
-	}
-	
-	
-	
+	}	
 }

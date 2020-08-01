@@ -30,4 +30,11 @@ public abstract class AbstractFlightService implements IPaymentService{
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	@Override
+	public boolean verifyCar(Card card) {
+		
+		return false;
+	}
+	
 }
