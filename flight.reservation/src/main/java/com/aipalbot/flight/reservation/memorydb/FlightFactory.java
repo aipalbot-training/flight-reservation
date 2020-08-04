@@ -22,6 +22,7 @@ public class FlightFactory {
 			Flight deltaAirline = new DeltaAirline(discount);
 			deltaAirline.setColor(Color.Orange);
 			deltaAirline.setArrival(AirportCode.JFK);
+			deltaAirline.setDeparture(AirportCode.LAS);
 			deltaAirline.setFlightNo("DAL-1000");
 			deltaAirline.setTerminal(Terminal.D);
 			Map<String,Seat> seats = createSeats(3);
@@ -33,7 +34,11 @@ public class FlightFactory {
 			
 			int promoCode = 2010;
 			Flight unitedAirline = new UnitedAirline(promoCode);
-			
+			unitedAirline.setColor(Color.White);
+			unitedAirline.setArrival(AirportCode.JFK);
+			unitedAirline.setDeparture(AirportCode.PHL);
+			unitedAirline.setFlightNo("UAL-1000");
+			unitedAirline.setTerminal(Terminal.A);
 			
 			Map<String,Seat> seats = createSeats(4);
 			unitedAirline.setSeats(seats);
@@ -45,7 +50,7 @@ public class FlightFactory {
 		
 	}
 	
-	public Map<String,Seat> createSeats(int flightMaxSeat){
+	private Map<String,Seat> createSeats(int flightMaxSeat){
 		Map<String,Seat>	seats = new HashMap<>();
 		// "F1-F20"  -- A1
 		//A1-- A3
